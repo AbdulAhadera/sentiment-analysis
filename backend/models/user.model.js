@@ -18,8 +18,7 @@ const userSchema = new Schema(
             index: true
         },
         avatar: {
-            type: String, // cloudinary url
-            required: true,
+            type: String, 
         },
         password: {
             type: String,
@@ -28,7 +27,6 @@ const userSchema = new Schema(
         refreshToken: {
             type: String
         }
-
     },
     {
         timestamps: true

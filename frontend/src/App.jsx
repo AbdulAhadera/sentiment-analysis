@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import MainPage from './pages/MainPage';
 
 function App() {
-  const [mainPage, setMainPage] = useState(true)
+  const [mainPage, setMainPage] = useState(false)
 
   return (
     <BrowserRouter>
