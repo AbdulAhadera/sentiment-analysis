@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/fonts.css */
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../public/fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
