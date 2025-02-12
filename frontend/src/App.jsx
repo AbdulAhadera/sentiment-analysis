@@ -19,7 +19,7 @@ function App() {
         :
         <>
           <Navbar />
-          <div className='px-2 md:px-10'>
+          <div className='px-3 md:px-10 bg-gradient-to-br from-bg-gradient-start to-bg-gradient-end'>
             <Router />
           </div>
           <Footer />

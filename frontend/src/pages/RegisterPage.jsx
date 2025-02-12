@@ -2,9 +2,9 @@ import RegisterForm from "../components/RegisterUser"
 
 function RegisterPage() {
     return (
-        <div className="w-full flex justify-center items-center shadow-lg">
+        <div className="w-full min-h-screen flex justify-center items-center md:px-28">
 
-            <div className="w-full md:w-1/2 bg-gray-200">
+            <div className="w-full md:w-1/2  rounded-lg">
                 <RegisterForm />
             </div>
 

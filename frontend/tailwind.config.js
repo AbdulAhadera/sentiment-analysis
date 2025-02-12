@@ -7,16 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bg-gradient-start': '#A3C6FF',   // Light Blue (Gradient Start)
-        'bg-gradient-end': '#D9E9FF',     // Very Light Blue (Gradient End)
-        'bg-headers': '#00BFFF',          // Bright Blue (Header, Footer, CTA Button)
-        'text-title': '#2C3E50',          // Dark Blue (Title Text)
-        'text-links': '#00BFFF',          // Bright Blue (Links)
-        'text-error': '#FFBB33',          // Soft Amber (Error Message Background)
-        'text-normal': '#FFFFFF',         // White (Text, Button Text)
+        'bg-gradient-start': '#f9f7f7',   // Light White/Off-White (Gradient Start)
+        'bg-gradient-end': '#d4e2f3',     // Soft Blue (Gradient End)
+        'headers': '#4e82b2',             // Medium Blue (Header, Footer, CTA Button)
+        'text-title': '#0d2d4d',          // Dark Blue (Title Text)
+        'text-links': '#4e82b2',          // Medium Blue (Links)
+        'text-error': '#F44336',          // Red (Error Message Background)
+        'text-normal': '#333333',         // Dark Gray (Text, Button Text)
+        'box': '#FFFFFF',                 // White (Form and Response Boxes)
+        'box-shadow': '#E0E0E0',           // Light Gray (Box Shadows)
+        'button-hover': '#4e82b2',        // Medium Blue (Button Hover)
       },
       fontFamily: {
-        'roboto': ['Roboto-Black', 'sans-serif'],
+        'roboto-black': ['Roboto', 'sans-serif'],
       },
     },
   },
