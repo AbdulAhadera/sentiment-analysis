@@ -27,7 +27,7 @@ function App() {
             <NavbarLaptop />
           </div>
 
-          <div className='px-3 md:px-10 bg-gradient-to-br from-bg-gradient-start to-bg-gradient-end'>
+          <div className='px-3 md:px-10 pt-16 pb-3 bg-gradient-to-br from-bg-gradient-start to-bg-gradient-end'>
             <Router />
           </div>
           <Footer />
