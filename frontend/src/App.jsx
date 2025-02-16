@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Router from './Router';
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import NavbarMobile from "./components/NavbarMobile";
+import NavbarLaptop from "./components/NavbarLaptop";
 import Footer from "./components/Footer";
 import MainPage from './pages/MainPage';
 
@@ -18,7 +19,14 @@ function App() {
         </>
         :
         <>
-          <Navbar />
+
+          <div className='block sm:hidden'>
+            <NavbarMobile />
+          </div>
+          <div className='hidden sm:block'>
+            <NavbarLaptop />
+          </div>
+
           <div className='px-3 md:px-10 bg-gradient-to-br from-bg-gradient-start to-bg-gradient-end'>
             <Router />
           </div>

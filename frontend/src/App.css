@@ -1,0 +1,14 @@
+.group:hover::before {
+    width: 100%;
+}
+
+.group::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d4e2f3;
+    transition: width 0.3s ease;
+}
