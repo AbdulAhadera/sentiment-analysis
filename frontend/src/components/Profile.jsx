@@ -1,4 +1,5 @@
 import ProfileImg from '../components/ProfileImg'
+import { ExpandableCardDemo } from './ProductCard';
 
 
 function Profile() {
@@ -37,9 +38,16 @@ function Profile() {
 
             </div>
 
-            <div className="w-full md:w-2/3 bg-red-400 ">
-                {/* Prdoucts */}a
+            <div className="w-full  mx-0 my-2 bg-white rounded-lg flex flex-col px-2 shadow-lg md:w-2/3 md:mx-2 md:my-0">
+                <div className= 'flex-1 my-1 overflow-y-scroll'>
+                    <ExpandableCardDemo />
+                </div>
+                <div className='bg-gray-100 flex-1 my-1'>
+                    {/* Content for gray div */}
+                    asd
+                </div>
             </div>
+
         </div>
     )
 }
