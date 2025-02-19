@@ -30,6 +30,8 @@ function Profile() {
                             >&nbsp;&nbsp;Read more </span>
                         </p>
                         <hr />
+
+                        <hr />
                         <button className='bg-headers w-full my-2 py-1 text-white font-semibold rounded-md hover:bg-headers/90'>
                             Edit Profile
                         </button>
@@ -39,12 +41,15 @@ function Profile() {
             </div>
 
             <div className="w-full  mx-0 my-2 bg-white rounded-lg flex flex-col px-2 shadow-lg md:w-2/3 md:mx-2 md:my-0">
-                <div className= 'flex-1 my-1 overflow-y-scroll'>
+                <div className='flex-1 my-1 overflow-y-scroll'>
+                    <h1 className='text-center text-2xl'>Products</h1>
                     <ExpandableCardDemo />
                 </div>
                 <div className='bg-gray-100 flex-1 my-1'>
-                    {/* Content for gray div */}
-                    asd
+                    <div className='flex min-h-full'>
+                        <div className='bg-red-300 w-1/2 min-h-full m-1'>asd</div>
+                        <div className='bg-red-400 w-1/2 min-h-full m-1'>asd</div>
+                    </div>
                 </div>
             </div>
 
@@ -52,4 +57,4 @@ function Profile() {
     )
 }
 
-export default Profile
+export default Profile;
