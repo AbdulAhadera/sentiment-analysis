@@ -1,6 +1,7 @@
 import ProfileImg from '../components/ProfileImg'
 import { ExpandableCardDemo } from './ProductCard';
-
+import pic from '../../public/me.jpg'
+import { IoIosStar } from "react-icons/io";
 
 function Profile() {
 
@@ -41,14 +42,31 @@ function Profile() {
             </div>
 
             <div className="w-full  mx-0 my-2 bg-white rounded-lg flex flex-col px-2 shadow-lg md:w-2/3 md:mx-2 md:my-0">
-                <div className='flex-1 my-1 overflow-y-scroll'>
-                    <h1 className='text-center text-2xl'>Products</h1>
+                <h1 className='text-center text-2xl'>Products</h1>
+                <div className='h-60 my-1 overflow-y-auto'>
                     <ExpandableCardDemo />
                 </div>
-                <div className='bg-gray-100 flex-1 my-1'>
-                    <div className='flex min-h-full'>
-                        <div className='bg-red-300 w-1/2 min-h-full m-1'>asd</div>
-                        <div className='bg-red-400 w-1/2 min-h-full m-1'>asd</div>
+
+                <div className=' my-1'>
+                    
+                    <div className=' sm:flex min-h-full'>
+
+                        <div className='w-fullsm:w-1/2 min-h-full m-1'>
+                            <p className='text-lg '>Badges</p>
+                            <div className='flex overflow-x-auto'>
+                                <img src={pic} alt="badges" className='h-16 rounded-full' />
+                            </div>
+                            <p className='text-lg'>Reviews</p>
+                            <div className='flex justify-center'>
+                                <IoIosStar size={25}  className='mx-1' />
+                                <IoIosStar size={25}  className='mx-1' />
+                                <IoIosStar size={25}  className='mx-1' />
+                                <IoIosStar size={25}  className='mx-1' />
+                                <IoIosStar size={25}  className='mx-1' />
+                            </div>
+                        </div>
+
+                        <div className='bg-red-400 w-full md:w-1/2 min-h-full m-1'>asd</div>
                     </div>
                 </div>
             </div>
