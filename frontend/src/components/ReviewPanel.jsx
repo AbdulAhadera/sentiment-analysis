@@ -15,7 +15,6 @@ function ReviewPanel() {
         />
         <IoMdSend size={30}  className="bg-headers px-1 text-white rounded-full"/>
       </div>
-
     </div>
   )
 }
